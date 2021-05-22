@@ -5,6 +5,7 @@
 <style>table{margin:auto}
 th,td{border:2px solid #302740}
 th{background:#100720}
+td:nth-child(2){text-align:center}/*temp*/
 .c-r{color:#ef6f6f}
 .c-o{color:#ffbf80}
 .c-y{color:#e7e707}
@@ -375,10 +376,10 @@ for(var i=0;i<img.length;i++){
 if(img[i].getAttribute('data-src')){
 img[i].setAttribute('src',img[i].getAttribute('data-src'));
 img[i].removeAttribute('data-src');
-}
-}
-}
-var demo=document.getElementsByTagName('p'),
+};
+};
+};
+var demo=document.getElementsByTagName('p')[0],
 brtest=document.createElement('br'),
 btn=document.createElement('button');
 btn.textContent='Load Images';
